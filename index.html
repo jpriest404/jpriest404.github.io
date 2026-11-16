@@ -17,6 +17,8 @@
   .card { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 16px 20px; margin: 14px 0; }
   .card h3 { margin-top: 0; }
   .card a { color: #0f2a43; font-weight: bold; }
+  .card img.chart { width: 100%; max-width: 640px; display: block; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; }
+  .tools { color: #444; font-size: 0.95em; }
   .skills { font-size: 1.05em; line-height: 1.7; }
   form input, form textarea { width: 100%; padding: 10px; margin: 6px 0 14px; border: 1px solid #bbb; border-radius: 4px; font-family: inherit; }
   form button { background: #0f2a43; color: #fff; padding: 10px 24px; border: none; border-radius: 4px; cursor: pointer; }
@@ -43,35 +45,60 @@
 
   <div class="card">
     <h3>Superstore Sales Analysis (SQL)</h3>
+    <img class="chart" src="category_margin.png" alt="Profit margin by category: Technology 15.8 percent, Office Supplies 9.5 percent, Furniture negative 3.3 percent">
     <p>15 business questions answered in T-SQL over 6,500 orders: profitability by category, region, segment, and product. Technology earns more than the whole company keeps; Furniture's losses, driven by Tables and deep discounting, eat the difference.</p>
+    <p><strong>Finding:</strong> Furniture loses money at every discount level from 20% up, and Tables alone account for 84% of the Furniture loss.</p>
+    <p><strong>Recommendation:</strong> Cap Furniture discounts and fix Tables pricing before chasing more sales volume.</p>
+    <p class="tools">Tools: T-SQL, SQL Server</p>
     <p><a href="https://github.com/jpriest404/superstore-sales-analysis-sql">Repository</a></p>
   </div>
 
   <div class="card">
     <h3>Cyclistic Bikeshare Customer Conversion Analysis</h3>
+    <img class="chart" src="cyclistic_header.png" alt="Cyclistic Bikeshare Analysis">
     <p>SQL (BigQuery) and Tableau. Casual vs member rider behavior over 12 months; casual riders take longer leisure trips, spike Friday to Sunday, and cluster at tourist spots like Navy Pier. Three recommendations to convert casuals to members.</p>
+    <p><strong>Finding:</strong> Casual riders ride for leisure (longer trips, Friday to Sunday, tourist areas), while members ride weekday commute patterns.</p>
+    <p><strong>Recommendation:</strong> Aim membership offers at weekend leisure riders and tourist corridors, where casual use is already heaviest.</p>
+    <p class="tools">Tools: SQL (BigQuery), Tableau</p>
     <p><a href="https://github.com/jpriest404/cyclistic_bikeshare_analysis">Repository</a> · <a href="https://public.tableau.com/app/profile/john.priest6272/viz/cyclisticdataanalysischarts/CyclisticBike-ShareMembervs_CasualUsageTrends">Live Tableau dashboard</a></p>
   </div>
 
   <div class="card">
     <h3>Wholesale Revenue &amp; Product Line Analysis</h3>
     <p>PostgreSQL. Net revenue (gross minus payment fees) by product line, month, and three regional warehouses. Frame &amp; Accessories and Engine lines drive net revenue; moving large accounts from card (3%) to bank transfer (1%) recovers up to 2% net margin.</p>
+    <p><strong>Finding:</strong> Card payment fees (3%, vs 1% for bank transfer) quietly eat margin on the largest accounts.</p>
+    <p><strong>Recommendation:</strong> Move large accounts from card to bank transfer to recover up to 2% net margin.</p>
+    <p class="tools">Tools: PostgreSQL</p>
     <p><a href="https://github.com/jpriest404/wholesale-revenue-sql-analysis">Repository</a></p>
   </div>
 
   <div class="card">
     <h3>NYC Schools Standardized Testing EDA</h3>
     <p>Python (pandas, NumPy, Jupyter). Composite SAT score engineered and compared across boroughs; Stuyvesant HS tops average math (754) and composite (2,144); Manhattan shows the widest spread.</p>
+    <p><strong>Finding:</strong> Stuyvesant HS tops average math (754) and composite score (2,144); Manhattan shows the widest spread between its schools.</p>
+    <p class="tools">Tools: Python (pandas, NumPy), Jupyter</p>
     <p><a href="https://github.com/jpriest404/nyc-schools-python-eda">Repository</a></p>
   </div>
 
   <div class="card">
     <h3>Superstore KPI Dashboard (Tableau)</h3>
     <p>Planned. A Tableau dashboard on the Superstore dataset, building on the SQL analysis above.</p>
+    <p class="tools">Tools: Tableau</p>
   </div>
 
   <h2>Skills</h2>
-  <p class="skills">SQL · Excel · Tableau · Python (pandas, NumPy) · BigQuery · PostgreSQL · Git/GitHub · Power BI (introductory)</p>
+  <p class="skills"><strong>Analysis:</strong> SQL (T-SQL, PostgreSQL, BigQuery), Excel (pivot tables, large-dataset cleaning)<br>
+  <strong>Visualization:</strong> Tableau, Power BI (introductory)<br>
+  <strong>Programming:</strong> Python (pandas, NumPy, in progress), Git and GitHub<br>
+  <strong>Domain:</strong> Operations leadership, KPI design, cost analysis, inventory and capacity planning</p>
+
+  <h2>Certifications</h2>
+  <ul>
+    <li>Google Data Analytics Professional Certificate (<a href="https://coursera.org/verify/professional-cert/8TKI2W5F3HRW">verify</a>)</li>
+    <li>DataCamp: Associate Data Analyst in SQL (<a href="https://www.datacamp.com/statement-of-accomplishment/track/4757c7dada9289157522e0aee0bd0ac6f305294a">verify</a>)</li>
+    <li>DataCamp: SQL for Business Analysts (<a href="https://www.datacamp.com/statement-of-accomplishment/track/fd0a47158a7ce919de6da74dfd142622f8aada06">verify</a>)</li>
+    <li>Deloitte Data Analytics Job Simulation (The Forage)</li>
+  </ul>
 
   <h2>Contact</h2>
   <p>Reach me through the form below, or connect on <a href="https://www.linkedin.com/in/john-%E2%80%9Cjack%E2%80%9D-p-1a485533">LinkedIn</a>.</p>
