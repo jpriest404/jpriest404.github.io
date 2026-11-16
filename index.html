@@ -7,6 +7,7 @@
 <style>
   body { font-family: Georgia, 'Times New Roman', serif; margin: 0; color: #1a1a1a; background: #fafafa; }
   header { background: #0f2a43; color: #fff; padding: 48px 20px; text-align: center; }
+  header img.photo { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; margin-bottom: 16px; }
   header h1 { margin: 0 0 8px; font-size: 2.2em; }
   header p.roles { margin: 0 0 16px; font-size: 1.05em; color: #cfe0ee; }
   header a { color: #ffd166; margin: 0 10px; text-decoration: none; }
@@ -24,7 +25,7 @@
 </head>
 <body>
 <header>
-  <img src="profile.png" alt="John Jack Priest" style="width:160px;height:160px;object-fit:cover;border-radius:50%;">
+  <img class="photo" src="profile.png" alt="John Priest">
   <h1>John "Jack" Priest, MBA</h1>
   <p class="roles">Operations Leader (MBA) | Business &amp; Operations Analyst | SQL · Excel · Tableau · Python</p>
   <p>
@@ -39,38 +40,51 @@
   <p>My edge is the combination: I have been the manager waiting on the report, so I build analysis that answers the business question first. What changed, why, and what to do about it.</p>
 
   <h2>Projects</h2>
+
   <div class="card">
-    <h3>Project 1 — Operational KPI Dashboard</h3>
-    <p>Tableau dashboard tracking throughput, turnaround, and cost KPIs for an operations team.</p>
-    <p><a href="https://github.com/jpriest404">View on GitHub →</a></p>
+    <h3>Superstore Sales Analysis (SQL)</h3>
+    <p>15 business questions answered in T-SQL over 6,500 orders: profitability by category, region, segment, and product. Technology earns more than the whole company keeps; Furniture's losses, driven by Tables and deep discounting, eat the difference.</p>
+    <p><a href="https://github.com/jpriest404/superstore-sales-analysis-sql">Repository</a></p>
   </div>
+
   <div class="card">
-    <h3>Project 2 — Inventory &amp; Capacity Analysis</h3>
-    <p>SQL + Excel analysis of inventory levels and capacity constraints, with recommendations to cut cost and improve service.</p>
-    <p><a href="https://github.com/jpriest404">View on GitHub →</a></p>
+    <h3>Cyclistic Bikeshare Customer Conversion Analysis</h3>
+    <p>SQL (BigQuery) and Tableau. Casual vs member rider behavior over 12 months; casual riders take longer leisure trips, spike Friday to Sunday, and cluster at tourist spots like Navy Pier. Three recommendations to convert casuals to members.</p>
+    <p><a href="https://github.com/jpriest404/cyclistic_bikeshare_analysis">Repository</a> · <a href="https://public.tableau.com/app/profile/john.priest6272/viz/cyclisticdataanalysischarts/CyclisticBike-ShareMembervs_CasualUsageTrends">Live Tableau dashboard</a></p>
   </div>
+
   <div class="card">
-    <h3>Project 3 — Cost Reduction Case Study</h3>
-    <p>Python (in progress) analysis of cost drivers and savings opportunities from operations data.</p>
-    <p><a href="https://github.com/jpriest404">View on GitHub →</a></p>
+    <h3>Wholesale Revenue &amp; Product Line Analysis</h3>
+    <p>PostgreSQL. Net revenue (gross minus payment fees) by product line, month, and three regional warehouses. Frame &amp; Accessories and Engine lines drive net revenue; moving large accounts from card (3%) to bank transfer (1%) recovers up to 2% net margin.</p>
+    <p><a href="https://github.com/jpriest404/wholesale-revenue-sql-analysis">Repository</a></p>
+  </div>
+
+  <div class="card">
+    <h3>NYC Schools Standardized Testing EDA</h3>
+    <p>Python (pandas, NumPy, Jupyter). Composite SAT score engineered and compared across boroughs; Stuyvesant HS tops average math (754) and composite (2,144); Manhattan shows the widest spread.</p>
+    <p><a href="https://github.com/jpriest404/nyc-schools-python-eda">Repository</a></p>
+  </div>
+
+  <div class="card">
+    <h3>Superstore KPI Dashboard (Tableau)</h3>
+    <p>Planned. A Tableau dashboard on the Superstore dataset, building on the SQL analysis above.</p>
   </div>
 
   <h2>Skills</h2>
-  <p class="skills">SQL · Excel · Tableau · Python (in progress) · Operations Leadership · KPI Design · Cost Analysis · Inventory &amp; Capacity Planning</p>
+  <p class="skills">SQL · Excel · Tableau · Python (pandas, NumPy) · BigQuery · PostgreSQL · Git/GitHub · Power BI (introductory)</p>
 
   <h2>Contact</h2>
+  <p>Reach me through the form below, or connect on <a href="https://www.linkedin.com/in/john-%E2%80%9Cjack%E2%80%9D-p-1a485533">LinkedIn</a>.</p>
   <form action="https://formsubmit.co/766d35037ef91923f503f4971f288854" method="POST">
-    <input type="hidden" name="_subject" value="New message from portfolio site">
-    <input type="hidden" name="_captcha" value="false">
-    <label>Name<br><input type="text" name="name" required></label>
-    <label>Email<br><input type="email" name="email" required></label>
-    <label>Message<br><textarea name="message" rows="5" required></textarea></label>
-    <button type="submit">Send Message</button>
+    <label>Your name</label>
+    <input type="text" name="name" required>
+    <label>Your email</label>
+    <input type="email" name="email" required>
+    <label>Message</label>
+    <textarea name="message" rows="5" required></textarea>
+    <button type="submit">Send</button>
   </form>
-  <p>Or connect on <a href="https://www.linkedin.com/in/john-%E2%80%9Cjack%E2%80%9D-p-1a485533">LinkedIn</a>.</p>
 </main>
-<footer>
-  <p>© 2026 John "Jack" Priest, MBA</p>
-</footer>
+<footer>© 2026 John Priest</footer>
 </body>
 </html>
