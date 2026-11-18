@@ -39,6 +39,10 @@
     .card:hover img.chart { transform: none; }
   }
   .tools { color: #444; font-size: 0.95em; }
+  .link-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px 16px; margin: 12px 0 4px; }
+  .link-cols h4 { margin: 0 0 4px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.06em; color: #0f2a43; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  .link-cols a { display: block; margin: 5px 0; font-size: 0.95em; }
+  @media (max-width: 560px) { .link-cols { grid-template-columns: 1fr; } }
   .skills { font-size: 1.05em; line-height: 1.7; }
   form input, form textarea { width: 100%; padding: 10px; margin: 6px 0 14px; border: 1px solid #bbb; border-radius: 4px; font-family: inherit; }
   form button { background: #0f2a43; color: #fff; padding: 10px 24px; border: none; border-radius: 4px; cursor: pointer; }
@@ -79,7 +83,23 @@
     <p><strong>Finding:</strong> Furniture loses money at every discount level from 20% up, and Tables alone account for 84% of the Furniture loss.</p>
     <p><strong>Recommendation:</strong> Cap Furniture discounts and fix Tables pricing before chasing more sales volume.</p>
     <p class="tools">Tools: T-SQL, SQL Server, Excel, Tableau</p>
-    <p><a href="https://github.com/jpriest404/superstore-sales-analysis-sql/blob/main/Project-1-Leadership-Report.md">Executive summary</a> · <a href="https://github.com/jpriest404/superstore-sales-analysis-sql">Repository (code and queries)</a> · <a href="https://github.com/jpriest404/superstore-sales-analysis-sql/blob/main/Superstore-Excel-Analysis.xlsx">Excel workbook</a> · <a href="https://github.com/jpriest404/superstore-sales-analysis-sql/blob/main/Excel-Analysis-Report.md">Excel report</a> · <a href="https://public.tableau.com/app/profile/john.priest6272/viz/SuperstoreDashboardMain/SuperstoreDashboard">Live Tableau dashboard</a> · <a href="https://public.tableau.com/app/profile/john.priest6272/viz/SuperstoreDashboard_17948754317760/SuperstoreDeepDive">Deep dive</a></p>
+    <div class="link-cols">
+      <div>
+        <h4>SQL</h4>
+        <a href="https://github.com/jpriest404/superstore-sales-analysis-sql/blob/main/Project-1-Leadership-Report.md">Executive summary</a>
+        <a href="https://github.com/jpriest404/superstore-sales-analysis-sql">Repository (code and queries)</a>
+      </div>
+      <div>
+        <h4>Tableau</h4>
+        <a href="https://public.tableau.com/app/profile/john.priest6272/viz/SuperstoreDashboardMain/SuperstoreDashboard">Live Tableau dashboard</a>
+        <a href="https://public.tableau.com/app/profile/john.priest6272/viz/SuperstoreDashboard_17948754317760/SuperstoreDeepDive">Deep dive</a>
+      </div>
+      <div>
+        <h4>Excel</h4>
+        <a href="https://github.com/jpriest404/superstore-sales-analysis-sql/blob/main/Excel-Analysis-Report.md">Excel report</a>
+        <a href="https://github.com/jpriest404/superstore-sales-analysis-sql/blob/main/Superstore-Excel-Analysis.xlsx">Excel workbook</a>
+      </div>
+    </div>
   </div>
 
   <div class="card">
